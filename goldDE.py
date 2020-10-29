@@ -48,6 +48,3 @@ def getGoldPrice(karat, currency="EUR", unitOfMeasurement="gramm"):
         raise Exception("ERROR WHILE GETTING GOLD PRICE: THIS KARAT VALUE IS NOT SUPPORTED OR THE WEBSITE IS DOWN")
 
     return price
-
-
-print(getGoldPrice("333", "EUR", "gramm"))
