@@ -8,7 +8,7 @@
   <h3 align="center">Scrap Gold Prices</h3>
 
   <p align="center">
-    Get Prices of different Gold Puritys from Gold.de
+    Get Prices of various Gold Purity's from Gold.de
     <br />
   </p>
 </p>
