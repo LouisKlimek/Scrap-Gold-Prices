@@ -65,8 +65,8 @@ Contributions are what make the open source community such an amazing place to b
 
 If you decide that you want to help out, here is a little List of things that need to be done.
 
-1. Add Support of other Currency
-2. Add Support of other Unit Measurements (eg. ounce, Kilogramm)
+1. Add support for other currencies
+2. Add support for other units (e.g. ounce, kilogram)
 
 
 
