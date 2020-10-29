@@ -35,7 +35,7 @@ This is just a Simple Python Class to get Gold Prices from Gold.de. It currently
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a gold price just call the getGoldPrice() Function and with your desired Attributes. See following Code:
+To get a gold price, just call the getGoldPrice() function with the Attributes you want. See following Code:
 ```sh
 #getGoldPrice(karat, currency, unitOfMeasurement)
 
