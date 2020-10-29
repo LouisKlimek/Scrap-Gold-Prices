@@ -1,5 +1,4 @@
 import json
-import urllib
 from urllib.request import urlopen, Request
 import lxml
 from lxml import etree, html
@@ -20,6 +19,7 @@ fractionConversion = {
     "9k": "375",
     "8k": "333"
 }
+
 
 def __getResponse(url):
     data = ""
@@ -42,8 +42,9 @@ def getGoldPrice(karat, currency="EUR", unitOfMeasurement="gramm"):
         raise Exception("ERROR WHILE CONVERTING KARAT TO WEIGHT PERCENTAGE: THIS KARAT VALUE IS NOT SUPPORTED")
 
     try:
-        parsedData = html.fromstring(__getResponse("https://www.gold.de/verkaufen/altgold/"+karat))
-        price = float(parsedData.xpath("//div[@class='bg_weiss r5 fw700 fz26 mfz18 pd5 cdblau']")[0].text[:5].replace(",","."))
+        parsedData = html.fromstring(__getResponse("https://www.gold.de/verkaufen/altgold/" + karat))
+        price = float(
+            parsedData.xpath("//div[@class='bg_weiss r5 fw700 fz26 mfz18 pd5 cdblau']")[0].text[:5].replace(",", "."))
     except lxml.etree.ParserError:
         raise Exception("ERROR WHILE GETTING GOLD PRICE: THIS KARAT VALUE IS NOT SUPPORTED OR THE WEBSITE IS DOWN")
 
